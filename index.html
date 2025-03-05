@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword Extractor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Keyword Extractor</h1>
+        <form method="post" enctype="multipart/form-data">
+            <label for="text">Paste text here:</label>
+            <textarea name="text" placeholder="Type or paste your text here..."></textarea><br><br>
+            <label for="file">Upload document (txt):</label>
+            <input type="file" name="file" accept=".txt"><br><br>
+            <label for="url">Enter URL:</label>
+            <input type="url" name="url" placeholder="Enter a URL"><br><br>
+            <button type="submit">Extract Keywords</button>
+        </form>
+        {% if keywords %}
+        <div class="output">
+            <h3>Extracted Keywords:</h3>
+            <p>{{ keywords | join(", ") }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
