@@ -29,10 +29,8 @@ Run the project locally and access it at **`http://127.0.0.1:5000`**
 ## **📂 Folder Structure**  
 ```
 keyword-extractor/
-│── static/
-│   ├── styles.css
-│── templates/
-│   ├── index.html
+│── styles.css
+│── index.html
 │── app.py
 │── requirements.txt
 │── README.md
@@ -43,7 +41,7 @@ keyword-extractor/
 ## **🛠️ Installation & Setup**  
 ### **1️⃣ Clone the Repository**  
 ```sh
-git clone https://github.com/your-username/keyword-extractor.git
+git clone https://github.com/karthi-reddy-z/keyword-extractor.git
 cd keyword-extractor
 ```
 
